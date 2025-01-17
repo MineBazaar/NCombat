@@ -3,3 +3,9 @@ version: '1.0-SNAPSHOT'
 main: com.notpatch.nCombat.NCombat
 api-version: '1.21'
 authors: [ NotPatch ]
+
+softdepend:
+  - PlaceholderAPI
+  - WorldGuard
+  - Vault
+  - GriefPrevention

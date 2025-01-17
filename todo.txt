@@ -1,0 +1,8 @@
+PlaceholderAPI
+Permissions
+Messages / langs
+Newbie protection module
+Kill rewards
+Kill streaks
+Kill messages (toast)
+Integrations: WorldGuard, Claims etc..

@@ -1,0 +1,13 @@
+cooldown-message: "You must wait %cooldown% seconds before using %item% again."
+cooldown-use: "You can now use %item% again."
+
+disable-enderpearl: "&cYou can't use ender pearls while in combat!"
+disable-block-place: "&cYou can't place %block% while in combat!"
+disable-block-break: "&cYou can't break %block% while in combat!"
+disable-item-drop: "&cYou can't drop %item% while in combat!"
+disable-item-pickup: "&cYou can't pick up %item% while in combat!"
+disable-use-command: "&cYou can't use this command while in combat!"
+disable-glide: "&cYou can't glide while in combat!"
+disable-consume: "&cYou can't consume %item% while in combat!"
+disable-totem: "&cYou can't use totems while in combat!"
+

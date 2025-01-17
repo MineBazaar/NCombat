@@ -1,4 +1,16 @@
 package com.notpatch.nCombat.integration.sub;
 
-public class WorldGuardIntegration {
+import com.notpatch.nCombat.integration.Integration;
+
+public class WorldGuardIntegration extends Integration {
+
+    public WorldGuardIntegration() {
+        super("WorldGuard", false);
+    }
+
+    @Override
+    protected void setup() {
+
+
+    }
 }

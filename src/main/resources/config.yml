@@ -1,0 +1,83 @@
+locale: en_US
+
+modules:
+  combat-tag:
+    enabled: true
+    death-on-leave: true
+    disable-flight: true
+    combat-tag-time: 15
+    # Actions
+    # BLOCK_PLACE, BLOCK_BREAK, GENERAL
+    # GENERAL: GLIDE, ENDER_PEARL
+    # * or all = All items or blocks
+    disabled-actions:
+      DROP_ITEM:
+        - "*"
+      PICKUP_ITEM:
+        - "*"
+      BLOCK_PLACE:
+        - "OBSIDIAN"
+      BLOCK_BREAK:
+        - "*"
+      ITEM_CONSUME:
+        - "*"
+      ITEM_DROP:
+        - "*"
+      ITEM_PICKUP:
+        - "*"
+      DISABLE_COMMAND:
+        - "*"
+      GENERAL:
+        - ELYTRA
+        - ENDER_PEARL
+        - TRIDENT
+        - TOTEM_OF_UNDYING
+  newbie-protection:
+    enabled: true
+    # Protection time in minutes
+    protection-time: 60
+  item-cooldown:
+    enabled: true
+    cooldowns:
+      # Cooldowns are in seconds
+      # Bypass permission: itemcooldown.bypass.<item>
+      ENDER_PEARL: 10
+      GOLDEN_APPLE: 10
+      ENCHANTED_GOLDEN_APPLE: 10
+  damage-indicator:
+    enabled: true
+    # Title, Hologram, Subtitle, ActionBar
+    # If combo mode is enabled, the damage indicator can't be displayed in the same types
+    indicator-type:
+      - Hologram
+      - Title
+      - Subtitle
+      - ActionBar
+    hit-format: "&c-%damage%❤"
+    critical-hit-format: "&4-%damage%❤"
+    duration: 5
+  combo:
+    enabled: true
+    # Title, Subtitle, ActionBar
+    combo-display-type:
+      - Title
+      - Subtitle
+      - ActionBar
+    # Threshold time in seconds
+    combo-formats:
+      5: "&cCombo: &4AIM ASSIST"
+      10: "&cCombo: &4AIM LOCK"
+      20: "&cCombo: &4KILL AURA"
+      30: "&cCombo: &4XANTARES"
+    combo-format-default: "&cCombo: &4%combo%x"
+    threshold: 5
+  death-message:
+    enabled: true
+    # Title, Subtitle, ActionBar, Toast, Chat
+    message-type:
+      - Title
+      - Subtitle
+      - ActionBar
+      - Toast
+      - Chat
+    death-message: "&c%player% killed by %attacker%!"
