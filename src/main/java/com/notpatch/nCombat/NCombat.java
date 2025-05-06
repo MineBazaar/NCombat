@@ -41,7 +41,7 @@ public final class NCombat extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
+        moduleManager.disableModules();
     }
 
     public static NCombat getInstance() {
@@ -50,5 +50,9 @@ public final class NCombat extends JavaPlugin {
 
     public LanguageLoader getLanguageLoader() {
         return languageLoader;
+    }
+
+    public IntegrationManager getIntegrationManager() {
+        return integrationManager;
     }
 }

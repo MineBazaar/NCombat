@@ -2,6 +2,7 @@ package com.notpatch.nCombat.manager;
 
 import com.notpatch.nCombat.integration.Integration;
 import com.notpatch.nCombat.integration.sub.PlaceholderApiIntegration;
+import com.notpatch.nCombat.integration.sub.WorldGuardIntegration;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +14,7 @@ public class IntegrationManager {
 
     public IntegrationManager() {
         integrations.add(new PlaceholderApiIntegration());
-
+        integrations.add(new WorldGuardIntegration());
     }
 
     public void initializeIntegrations() {

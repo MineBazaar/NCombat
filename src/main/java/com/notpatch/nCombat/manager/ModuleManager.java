@@ -44,7 +44,8 @@ public class ModuleManager {
                 new CombatTag(),
                 new NewbieProtection(),
                 new DamageIndicator(),
-                new ComboModule()
+                new ComboModule(),
+                new RegionBlocker()
 
         );
         modules.forEach(Module::enable);
@@ -56,7 +57,8 @@ public class ModuleManager {
                 new CombatTag(),
                 new NewbieProtection(),
                 new DamageIndicator(),
-                new ComboModule()
+                new ComboModule(),
+                new RegionBlocker()
         );
         modules.forEach(Module::disable);
     }

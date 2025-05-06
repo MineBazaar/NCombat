@@ -4,5 +4,5 @@ Messages / langs
 Newbie protection module
 Kill rewards
 Kill streaks
-Kill messages (toast)
+**Kill messages (toast)
 Integrations: WorldGuard, Claims etc..

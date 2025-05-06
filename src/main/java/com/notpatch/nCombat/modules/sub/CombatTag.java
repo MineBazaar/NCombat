@@ -27,15 +27,15 @@ public class CombatTag extends Module {
     public int COMBAT_TAG_TIME;
     public static Map<Player, Integer> combatTag = new ConcurrentHashMap<>();
 
-    private LanguageLoader languageLoader;
+    private final LanguageLoader languageLoader;
 
-    private List<String> DISABLED_ACTIONS_BLOCK_PLACE;
-    private List<String> DISABLED_ACTIONS_BLOCK_BREAK;
-    private List<String> DISABLED_ACTIONS_GENERAL;
-    private List<String> DISABLED_ACTIONS_ITEM_CONSUME;
-    private List<String> DISABLE_ITEM_DROP;
-    private List<String> DISABLE_ITEM_PICKUP;
-    private List<String> DISABLE_COMMAND;
+    private final List<String> DISABLED_ACTIONS_BLOCK_PLACE;
+    private final List<String> DISABLED_ACTIONS_BLOCK_BREAK;
+    private final List<String> DISABLED_ACTIONS_GENERAL;
+    private final List<String> DISABLED_ACTIONS_ITEM_CONSUME;
+    private final List<String> DISABLE_ITEM_DROP;
+    private final List<String> DISABLE_ITEM_PICKUP;
+    private final List<String> DISABLE_COMMAND;
 
     private static boolean DISABLE_FLIGHT;
     private static boolean SHOULD_DIE_ON_LEAVE;

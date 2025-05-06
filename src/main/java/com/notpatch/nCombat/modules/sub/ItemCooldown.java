@@ -18,8 +18,7 @@ import org.bukkit.scheduler.BukkitRunnable;
 
 public class ItemCooldown extends Module {
 
-    private LanguageLoader languageLoader;
-
+    private final LanguageLoader languageLoader;
 
     public ItemCooldown() {
         super(ModuleManager.getModule("item-cooldown"));
@@ -50,7 +49,7 @@ public class ItemCooldown extends Module {
         Player p = e.getPlayer();
         ItemStack item = e.getItem();
 
-        if(item == null) return;
+        if(item == null || item.getType().equals(Material.AIR)) return;
         String itemName = item.getType().name().toUpperCase();
 
         if(ModuleManager.get("item-cooldown", "cooldowns." + itemName) == null) return;

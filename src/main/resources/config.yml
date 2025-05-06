@@ -81,3 +81,6 @@ modules:
       - Toast
       - Chat
     death-message: "&c%player% killed by %attacker%!"
+  region-blocker:
+    #Block players from entering a region while in combat
+    enabled: true

@@ -39,8 +39,7 @@ public class ComboModule extends Module {
 
     @EventHandler
     public void onHit(EntityDamageByEntityEvent e){
-        if(!(e.getDamager() instanceof Player || !(e.getEntity() instanceof Player))) return;
-        Player player = (Player) e.getDamager();
+        if(!(e.getDamager() instanceof Player player && !(e.getEntity() instanceof Player))) return;
         Player victim = (Player) e.getEntity();
 
         if(player == victim) return;
